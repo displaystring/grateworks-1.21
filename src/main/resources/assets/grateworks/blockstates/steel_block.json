@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "grateworks:block/steel_block"
+    }
+  }
+}

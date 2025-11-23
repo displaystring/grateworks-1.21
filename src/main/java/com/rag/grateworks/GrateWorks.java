@@ -1,5 +1,6 @@
 package com.rag.grateworks;
 
+import com.rag.grateworks.block.ModBlocks;
 import com.rag.grateworks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +15,6 @@ public class GrateWorks implements ModInitializer {
 	@Override
 	public void onInitialize() {
         ModItems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
