@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "grateworks",
+	"version": "${version}",
+	"name": "GrateWorks",
+	"description": "A mod focused on creating a specific subgenre of the industrial aesthetic.",
+	"authors": [
+		"rag"
+	],
+	"contact": {
+		"homepage": "https://displaystring.neocities.org/",
+		"sources": "https://github.com/displaystring/GrateWorks"
+	},
+	"license": "MIT",
+	"icon": "assets/grateworks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.rag.grateworks.GrateWorks"
+		],
+		"fabric-datagen": [
+			"com.rag.grateworks.GrateWorksDataGenerator"
+		],
+        "client": [
+          "com.rag.grateworks.GrateWorksClient"
+        ]
+	},
+	"mixins": [
+		"grateworks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
