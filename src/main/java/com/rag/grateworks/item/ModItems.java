@@ -18,6 +18,6 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        GrateWorks.LOGGER.info("Registered ITEMS for" + GrateWorks.MOD_ID);
+        GrateWorks.LOGGER.info("Registered ITEMS for " + GrateWorks.MOD_ID);
     }
 }

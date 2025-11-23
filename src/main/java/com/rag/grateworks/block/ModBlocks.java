@@ -22,7 +22,7 @@ public class ModBlocks {
                     .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .strength(5f, 6f)
                     .requiresTool()
-                    .sounds(BlockSoundGroup.METAL)));
+                    .sounds(BlockSoundGroup.NETHERITE)));
 
     public static final Block STAINLESS_STEEL_BLOCK = registerBlock("stainless_steel_block",
             new Block(AbstractBlock.Settings.create()
@@ -43,6 +43,6 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        GrateWorks.LOGGER.info("Registering BLOCKS for" + GrateWorks.MOD_ID);
+        GrateWorks.LOGGER.info("Registering BLOCKS for " + GrateWorks.MOD_ID);
     }
 }

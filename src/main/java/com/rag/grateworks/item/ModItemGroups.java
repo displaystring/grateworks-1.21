@@ -33,6 +33,6 @@ public class ModItemGroups {
                     }).build());
 
     public static void registerItemGroups() {
-        GrateWorks.LOGGER.info("Registering ITEM GROUPS for" + GrateWorks.MOD_ID);
+        GrateWorks.LOGGER.info("Registering ITEM GROUPS for " + GrateWorks.MOD_ID);
     }
 }
