@@ -1,6 +1,7 @@
 package com.rag.grateworks;
 
 import com.rag.grateworks.block.ModBlocks;
+import com.rag.grateworks.item.ModItemGroups;
 import com.rag.grateworks.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class GrateWorks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
+
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 	}

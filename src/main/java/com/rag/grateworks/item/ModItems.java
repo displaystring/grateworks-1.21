@@ -19,10 +19,5 @@ public class ModItems {
 
     public static void registerModItems() {
         GrateWorks.LOGGER.info("Registered ITEMS for" + GrateWorks.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(STEEL_INGOT);
-            fabricItemGroupEntries.add(STAINLESS_STEEL_INGOT);
-        });
     }
 }

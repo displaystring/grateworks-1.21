@@ -44,10 +44,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         GrateWorks.LOGGER.info("Registering BLOCKS for" + GrateWorks.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(STEEL_BLOCK);
-            fabricItemGroupEntries.add(STAINLESS_STEEL_BLOCK);
-        });
     }
 }
