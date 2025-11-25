@@ -32,6 +32,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STAINLESS_STEEL_BLOCK);
                     }).build());
 
+    public static final ItemGroup GRATEWORKS_EQUIPMENT = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(GrateWorks.MOD_ID,"grateworks_equipment"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.CROWBAR))
+                    .displayName(Text.translatable("itemgroup.grateworks.grateworks_equipment"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CROWBAR);
+                    }).build());
+
     public static void registerItemGroups() {
         GrateWorks.LOGGER.info("Registering ITEM GROUPS for " + GrateWorks.MOD_ID);
     }

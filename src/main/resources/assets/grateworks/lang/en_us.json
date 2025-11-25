@@ -1,10 +1,12 @@
 {
   "item.grateworks.steel_ingot": "Steel Ingot",
   "item.grateworks.stainless_steel_ingot": "Stainless Steel Ingot",
+  "item.grateworks.crowbar": "Crowbar",
 
   "block.grateworks.steel_block": "Block of Steel",
   "block.grateworks.stainless_steel_block": "Block of Stainless Steel",
 
   "itemgroup.grateworks.grateworks_ingredients": "GrateWorks Ingredients",
-  "itemgroup.grateworks.grateworks_building_blocks": "GrateWorks Building Blocks"
+  "itemgroup.grateworks.grateworks_building_blocks": "GrateWorks Building Blocks",
+  "itemgroup.grateworks.grateworks_equipment": "GrateWorks Equipment"
 }
