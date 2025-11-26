@@ -45,13 +45,15 @@ public class CrowbarItem extends Item {
             }
         } else if (Blocks.IRON_DOOR == clickedBLock) {
             if (!world.isClient()) {
-                world.setBlockState(context.getBlockPos(), state.with(DoorBlock.OPEN, true));
+                if (state.get(DoorBlock.OPEN).equals(false)) {
+                    world.setBlockState(context.getBlockPos(), state.with(DoorBlock.OPEN, true));
 
-                context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
-                        item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
+                    context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
+                            item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.ITEM_AXE_SCRAPE, SoundCategory.BLOCKS);
-                world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_ITEM_BREAK, SoundCategory.BLOCKS);
+                    world.playSound(null, context.getBlockPos(), SoundEvents.ITEM_AXE_SCRAPE, SoundCategory.BLOCKS);
+                    world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_ITEM_BREAK, SoundCategory.BLOCKS);
+                }
             }
         }
 

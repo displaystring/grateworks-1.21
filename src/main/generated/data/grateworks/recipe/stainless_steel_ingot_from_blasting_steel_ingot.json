@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "group": "stainless_steel_ingot",
+  "ingredient": {
+    "item": "grateworks:steel_ingot"
+  },
+  "result": {
+    "id": "grateworks:stainless_steel_ingot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "crowbar",
+  "key": {
+    "#": {
+      "item": "grateworks:stainless_steel_ingot"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "  #",
+    " X ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "grateworks:crowbar"
+  }
+}

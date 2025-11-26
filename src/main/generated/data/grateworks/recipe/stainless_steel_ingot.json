@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "grateworks:stainless_steel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "grateworks:stainless_steel_ingot"
+  }
+}
